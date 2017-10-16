@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Start Machine</title>
+  </head>
+  <body>
+    <button type="button" name="button" id="btn">start machine</button>
+    <p class="text" id="text">The machine has stopped.</p>
+
+    <script type="text/javascript">
+      var btn = document.getElementById("btn");
+      var txt = document.getElementById("text");
+
+      btn.addEventListener('click',ClickButton);
+
+      function ClickButton(){
+        if (btn.textContent === "start machine") {
+          btn.textContent = "stop machine";
+          txt.textContent = "The machine has started";
+        }else {
+          btn.textContent = "start machine";
+          txt.textContent = "The machine has stopped";
+        }
+      }
+    </script>
+  </body>
+</html>

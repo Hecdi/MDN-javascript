@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>字符串的串联</title>
+  </head>
+  <body>
+    <button type="button" name="button" id="buttton">点击我</button>
+
+  </body>
+  <script type="text/javascript">
+    var btn = document.getElementById("button");
+    btn.onclick = function(){
+      var name = prompt("What's your name?")
+      alert("hello"+name,+"nice to meet you!")
+    }
+  </script>
+</html>
